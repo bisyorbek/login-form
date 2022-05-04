@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    /* nomi */
+    animation-name: lorem;
+    /* davomiyligi */
+    animation-duration: 2s;
+    /* kutish vaqti */
+    animation-delay: 0s;
+    animation-timing-function: linear;
+
+    animation-fill-mode: forwards;
+    /* infinite - cheksiz */
+    animation-iteration-count: 10;
+    /* yo'nalish, qaytish */
+    animation-direction: alternate;
+}
+@keyframes lorem{
+    0%{}
+    25%{ 
+        background-color: blue;
+        transform: translateX(300px);
+        box-shadow: 0 0 50px green;
+    }
+    50%{
+        background-color: violet;
+        transform: translateX(300px) translateY(300px) rotate(360deg);
+        border: 25px solid red;
+
+    }
+    75%{ 
+        background-color: green;
+        transform: translateX(0) translateY(300px);
+        border-radius: 25%;
+
+    }
+    100%{
+        background-color: gold;
+        transform: translateX(0) translateY(0);
+        border-radius: 50%;
+
+    }
+}
+/* @keyframes lorem {
+    from{
+        background-image: linear-gradient(green, #fff, red);
+        transform: rotate(180deg);
+        border-radius: 10px;
+    }
+    to{
+        background-image: linear-gradient(red, blue, green);
+        margin-left: 500px;
+        border-radius: 50%;
+    }
+} */
